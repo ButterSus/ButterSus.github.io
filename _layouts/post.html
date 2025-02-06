@@ -28,9 +28,10 @@ layout: default
   {{ content }}
 </div>
 
-{% if site.dash.disqus.shortname %}
+{% if site.dash.isso.url %}
 <div class="comments">
-{% include disqus.html %}
+  <script data-isso="{{ site.dash.isso.url }}" src="{{ site.dash.isso.url }}/js/embed.min.js"></script>
+  <section id="isso-thread"></section>
 </div>
 {% endif %}
 
