@@ -22,7 +22,7 @@ dash:
   disqus:
     shortname: bitbrain-github-io
   isso:
-    url: https://buttersus.duckdns.org:8080
+    url: https://buttersus.duckdns.org
 
   # generate social links in footer
   # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
