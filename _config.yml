@@ -1,52 +1,39 @@
+# Site settings
 title: ButterSus
 author: ButterSus
-description: > # this means to ignore newlines until "show_exerpts:"
+description: >
   A blog about compilers, FPGA, and other things.
-  Student in Moscow, Russia.
-show_excerpts: false # set to true to show excerpts on the homepage
+  And also burgers
+show_excerpts: false
 
+# Pagination
 paginate: 5
 paginate_path: "/blog/page:num/"
 
+# Tags
 tag_permalink_style: pretty
 tag_page_layout: tag_page
 tag_page_dir: tag
 
-# jekyll-dash date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 dash:
-  # the way how dates should be displayed
-  date_format: "%b %-d, %Y"
-
-  # (optional) discqus comment configuration
-  disqus:
-    shortname: bitbrain-github-io
+  # My cheap VPS running backend for isso comments
   isso:
     url: https://buttersus.duckdns.org
 
-  # generate social links in footer
-  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  # Other settings
+  date_format: "%b %-d, %Y"
   social_links:
     - url: https://github.com/ButterSus
       icon: github-square
-      color: purple
-
-  # wether the author box should be displayed
+      color: blue
   show_author: true
-
-  # the animation speed of the scroll-in effect
   animation_speed: 50
-
-  # wether to enable Right-to-Left support or not
   rtl: false
-
-  # Replaces the default avatar provider (gravatar)
   avatar_source: github
   github_username: ButterSus
 
 # Build settings
 remote-theme: jekyll-dash
-
 plugins:
  - jekyll-feed
  - jekyll-seo-tag

@@ -31,7 +31,9 @@ layout: default
 {% if site.dash.isso.url %}
 <div class="comments">
   <script data-isso="{{ site.dash.isso.url }}" src="{{ site.dash.isso.url }}/js/embed.min.js"></script>
-  <section id="isso-thread"></section>
+  <section id="isso-thread">
+    <noscript>Please enable JavaScript to view the comments.</noscript>
+  </section>
 </div>
 {% endif %}
 
@@ -92,6 +94,5 @@ layout: default
     image: {
       verticalFit: true
     }
-    
   });
 </script>
